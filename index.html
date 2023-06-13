@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="./style.css">
+      <title>Document</title>
+</head>
+<body>
+    <nav class="header-container">
+        <div class="left-container">
+            <span class="material-icons">menu</span>
+            <img style="width: 100px;" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/YouTube_dark_logo_2017.svg/1280px-YouTube_dark_logo_2017.svg.png" alt="">
+        </div>
+        
+        <div class="middle-container">
+            <div class="search">
+                <span class="material-icons">search</span>
+                <input class="search-input" placeholder="Search">
+                <button onclick="searchVideos()" id="searchbtn"><span id="search-icon" class="material-icons">search</span></button>
+            </div>
+            <div class="voice"><span id="mic" class="material-icons mic">mic</span></div>
+            </div>
+        <div class="right-container">
+            <span class="material-icons">video_call</span>
+            <span class="material-icons">notifications</span>
+            <button id="signin">Sign in</button>
+        </div>
+    </nav>
+
+
+
+
+    <section>
+        <div class="menu-container">
+                <span class="material-icons">home</span>
+                <span>Home</span>
+                <img style="width:30px;" src="./yt-shots.png">
+                <span>Shorts</span>
+                <span class="material-icons">subscriptions</span>
+                <span>Subscriptions</span>
+                <span class="material-icons">video_library</span>
+                <span>Library</span>
+        </div>
+        <div id="search-container">
+
+        </div>
+    </section>
+    
+    <script src="./script.js"></script>
+
+</body>
+</html>
