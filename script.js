@@ -1,4 +1,4 @@
-const searchInput = document.getElementsByClassName('search-input');
+var searchInput = document.getElementById('search-input');
 const apikey = "AIzaSyBiNHaAr63ao4E9YLSrirA9TM4j63yc4lU"
 
 async function fetchVideos(searchValue){
@@ -73,8 +73,8 @@ function populateSearchVideo(items){
 };
 
 function searchVideos(){
-    let searchValue = searchInput.value;
-    fetchVideos(searchValue);
+    var searchValue = searchInput.value;
+    optimseSearch(fetchVideos(searchValue),400);
 }
 
 async function videoStatistics(videoId){
@@ -110,5 +110,20 @@ function calculatePublishDated(date) {
 }
 
 window.onload = fetchVideos('js');
+
+document.getElementById('search-btn').addEventListener('click',(event)=>{
+    event.preventDefault();
+    searchVideos();
+})
+
+function optimseSearch(callback, delay){
+    let timer;
+    return function(...args){
+        if(timer) clearTimeout(timer);
+        timer = setInterval(()=>{
+            callback(...args);
+        },delay)
+    };
+};
 
 
