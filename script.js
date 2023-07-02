@@ -74,7 +74,7 @@ function populateSearchVideo(items){
 
 function searchVideos(){
     var searchValue = searchInput.value;
-    optimseSearch(fetchVideos(searchValue),400);
+    optimseSearch(fetchVideos(searchValue),1000);
 }
 
 async function videoStatistics(videoId){
