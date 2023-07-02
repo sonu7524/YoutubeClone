@@ -126,7 +126,7 @@ body{
 .player-container
 {
     display: grid;
-    width: 80%;
+    width: 90%;
     justify-content: space-between;
     margin: auto;
     margin-top: 80px;
